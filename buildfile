@@ -4,7 +4,7 @@ require 'buildr/gwt'
 
 GWT_EXAMPLES=%w(arez.ticker.example.IntervalTickerExample)
 
-desc 'Arez-NetworkStatus: Arez component that ticks at a specified interval'
+desc 'Arez-Ticker: Arez component that ticks at a specified interval'
 define 'arez-ticker' do
   project.group = 'org.realityforge.arez.ticker'
   compile.options.source = '1.8'
