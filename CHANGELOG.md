@@ -3,7 +3,7 @@
 ### Unreleased
 
 * Upgrade the `org.realityforge.com.google.elemental2` artifacts to version `1.0.0-b19-fb227e3`.
-* Upgrade the `org.realityforge.braincheck` artifact to version `1.13.0`.
+* Remove the `org.realityforge.braincheck` dependency and replace with arez invariants.
 * Update the 'org.realityforge.arez' dependencies to version '0.132'
 * Remove the `Arez-####: ` prefixes from invariant messages as the project is no longer
   included within the Arez project and thus these error numbers have been re-assigned.

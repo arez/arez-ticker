@@ -25,7 +25,6 @@ define 'arez-ticker' do
                :elemental2_core,
                :elemental2_promise,
                :elemental2_dom,
-               :braincheck,
                :arez_core
 
   gwt_enhance(project)
