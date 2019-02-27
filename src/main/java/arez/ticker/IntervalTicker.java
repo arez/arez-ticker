@@ -9,7 +9,7 @@ import arez.annotations.OnActivate;
 import arez.annotations.OnDeactivate;
 import elemental2.dom.DomGlobal;
 import javax.annotation.Nonnull;
-import static org.realityforge.braincheck.Guards.*;
+import static arez.Guards.*;
 
 /**
  * An Observable model that "ticks" at a specified interval. The tick is actually updating the
