@@ -94,7 +94,7 @@ public abstract class IntervalTicker
     {
       apiInvariant( () -> interval >= 0,
                     () ->
-                      "Arez-0169: IntervalTicker.setInterval() was passed an invalid interval. Expected " +
+                      "IntervalTicker.setInterval() was passed an invalid interval. Expected " +
                       "a positive number but actual value was " + interval );
     }
     _interval = interval;
@@ -117,7 +117,7 @@ public abstract class IntervalTicker
     final long rawTime = getLastTickTime();
     if ( Arez.shouldCheckInvariants() )
     {
-      invariant( () -> 0 != rawTime, () -> "Arez-0170: IntervalTicker.getTickTime() has unexpected rawTime of 0." );
+      invariant( () -> 0 != rawTime, () -> "IntervalTicker.getTickTime() has unexpected rawTime of 0." );
     }
     return rawTime;
   }
@@ -156,7 +156,7 @@ public abstract class IntervalTicker
     if ( Arez.shouldCheckInvariants() )
     {
       invariant( () -> 0 == _intervalId,
-                 () -> "Arez-0171: IntervalTicker.setupTimer() called but timer is already active." );
+                 () -> "IntervalTicker.setupTimer() called but timer is already active." );
     }
     _intervalId = DomGlobal.setInterval( e -> tick(), _interval );
     /*
@@ -171,7 +171,7 @@ public abstract class IntervalTicker
     if ( Arez.shouldCheckInvariants() )
     {
       invariant( () -> 0 != _intervalId,
-                 () -> "Arez-0172: IntervalTicker.clearTimer() called but no timer is active." );
+                 () -> "IntervalTicker.clearTimer() called but no timer is active." );
     }
     DomGlobal.clearTimeout( _intervalId );
     _intervalId = 0;

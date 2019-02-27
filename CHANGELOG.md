@@ -5,6 +5,8 @@
 * Upgrade the `org.realityforge.com.google.elemental2` artifacts to version `1.0.0-b19-fb227e3`.
 * Upgrade the `org.realityforge.braincheck` artifact to version `1.13.0`.
 * Update the 'org.realityforge.arez' dependencies to version '0.132'
+* Remove the `Arez-####: ` prefixes from invariant messages as the project is no longer
+  included within the Arez project and thus these error numbers have been re-assigned.
 
 ### [v0.56](https://github.com/arez/arez-ticker/tree/v0.56) (2019-02-24)
 [Full Changelog](https://github.com/arez/arez-ticker/compare/v0.55...v0.56)
